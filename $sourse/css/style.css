@@ -13,6 +13,14 @@ h2 {
   color: #fff;
 }
 
+h3 {
+  font-family: "Playfair Display Regular";
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
 .header_content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -190,6 +198,43 @@ h2 {
   color: #FFFFFF;
 }
 
+.product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-top: 50px;
+  max-width: 260px;
+  width: 100%;
+}
+.product img {
+  background-color: #191B1C;
+  width: 100%;
+  padding: 35px 0 30px 0;
+}
+.product h5 {
+  font-family: "Playfair Display Regular";
+  font-size: 18px;
+  line-height: 21px;
+  margin: 25px 0 10px 0;
+  color: #fff;
+}
+.product p {
+  font-family: "Playfair Display Regular";
+  font-size: 16px;
+  line-height: 19px;
+  color: #fff;
+}
+
 .new {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -218,10 +263,10 @@ h2 {
   width: 100%;
 }
 .new .new_season span {
+  margin-top: 50px;
   width: 120px;
   height: 2px;
-  background-color: #fff;
-  margin-top: 50px;
+  background-color: #FFFFFF;
 }
 .new .new_season .content {
   display: -webkit-box;
@@ -233,42 +278,6 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-}
-.new .new_season .content .product {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-top: 50px;
-  max-width: 260px;
-  width: 100%;
-}
-.new .new_season .content .product img {
-  background-color: #191B1C;
-  width: 100%;
-  padding: 35px 0 30px 0;
-}
-.new .new_season .content .product h5 {
-  font-family: "Playfair Display Regular";
-  font-size: 18px;
-  line-height: 21px;
-  margin: 25px 0 10px 0;
-  color: #fff;
-}
-.new .new_season .content .product p {
-  font-family: "Playfair Display Regular";
-  font-size: 16px;
-  line-height: 19px;
-  color: #fff;
 }
 .new .new_collection {
   max-width: 880px;
@@ -348,18 +357,196 @@ h2 {
 }
 .old_collection .content p {
   max-width: 471px;
+  margin-bottom: 40px;
+  text-align: center;
   font-family: "PT Sans Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 150%;
-  text-align: center;
   color: #FFFFFF;
-  margin-bottom: 40px;
 }
 .old_collection .content span {
+  margin: 40px 0 40px 0;
   width: 120px;
   height: 2px;
   background-color: #FFFFFF;
-  margin: 40px 0 40px 0;
+}
+
+.new_arrival {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 120px 0 150px;
+}
+.new_arrival span {
+  margin: 40px 0 81px 0;
+  width: 120px;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+.new_arrival .content {
+  max-width: 1115px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+}
+
+.brends {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 80px;
+}
+.brends span {
+  margin: 40px 0 40px;
+  width: 120px;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+.brends .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.brends .content img {
+  margin: 0 15px 0 15px;
+}
+
+footer {
+  background-image: url(/img/footer.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 400px;
+}
+footer .information {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+}
+footer .information .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1110px;
+  width: 100%;
+}
+footer .information .content .about_us {
+  max-width: 350px;
+  width: 100%;
+  text-align: left;
+}
+footer .information .content .about_us p {
+  margin: 40px 0 0;
+  font-family: "PT Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+footer .information .content .catygory {
+  max-width: 350px;
+  width: 100%;
+}
+footer .information .content .catygory button {
+  margin: 20px 20px 0 0;
+  background-color: #0F0F0F;
+  border: 1px solid #0F0F0F;
+  font-family: "PT Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  padding: 10px 20px;
+  color: #FFFFFF;
+}
+footer .information .content .mailing {
+  max-width: 350px;
+  width: 100%;
+}
+footer .information .content .mailing p {
+  margin: 40px 0 40px;
+  font-family: "PT Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+}
+footer .information .content .mailing button {
+  background-color: #0F0F0F;
+  border: 1px solid #0F0F0F;
+  font-family: "PT Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+  padding: 10px 20px;
+  color: #FFFFFF;
+}
+footer .information .content .mailing input {
+  background-color: rgba(255, 255, 255, 0.4);
+  height: 42px;
+}
+
+.autors {
+  font-family: "PT Sans Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  color: #FFFFFF;
+  color: #D0D0D0;
+  max-width: 1110px;
+  width: 100%;
+  text-align: left;
+  padding: 17px 0 17px 0;
+  margin: 0 auto;
 }
