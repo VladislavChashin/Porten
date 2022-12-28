@@ -2,6 +2,7 @@
 @import url(/fonts/playfair/style.css);
 @import url(/fonts/post-nobiils/style.css);
 @import url(/fonts/pt-sans/style.css);
+@import url(media.css);
 body {
   background-color: rgb(0, 0, 0);
 }
@@ -11,6 +12,18 @@ h2 {
   font-size: 36px;
   line-height: 42px;
   color: #fff;
+}
+@media (max-width: 445px) {
+  h2 {
+    font-size: 27px;
+    line-height: 30px;
+  }
+}
+@media (max-width: 325px) {
+  h2 {
+    font-size: 23px;
+    line-height: 27px;
+  }
 }
 
 h3 {
@@ -49,6 +62,13 @@ h3 {
   height: 100%;
   margin: 0 auto;
 }
+@media (max-width: 768px) {
+  .header_content .info .info_content {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 .header_content .info .info_content .phone {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -59,6 +79,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0 10px 0 10px;
 }
 .header_content .info .info_content .phone p:nth-child(3) {
   border-right: 1px solid #969696;
@@ -79,6 +100,11 @@ h3 {
   color: #969696;
   text-decoration: none;
   outline: none;
+}
+@media (max-width: 768px) {
+  .header_content .info .info_content .reg_auth {
+    display: none;
+  }
 }
 .header_content .info .info_content p {
   font-family: "PT Sans Regular";
@@ -113,6 +139,7 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: 0px 10px 0 10px;
 }
 .header_content .navbar .navbar_content nav {
   max-width: 525px;
@@ -130,6 +157,11 @@ h3 {
           align-items: center;
   height: 100%;
 }
+@media (max-width: 768px) {
+  .header_content .navbar .navbar_content nav ul {
+    display: none;
+  }
+}
 .header_content .navbar .navbar_content nav a {
   font-family: "PT Sans Regular";
   font-style: normal;
@@ -145,7 +177,7 @@ h3 {
   background-image: url(/img/firs_peaple.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 810px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,13 +244,14 @@ h3 {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 50px;
+  margin: 50px 5px 0px 5px;
   max-width: 260px;
   width: 100%;
 }
 .product img {
   background-color: #191B1C;
   width: 100%;
+  height: auto;
   padding: 35px 0 30px 0;
 }
 .product h5 {
@@ -233,6 +266,16 @@ h3 {
   font-size: 16px;
   line-height: 19px;
   color: #fff;
+}
+@media (max-width: 445px) {
+  .product.lit h5 {
+    font-size: 13px;
+    line-height: 19px;
+  }
+  .product.lit p {
+    font-size: 10px;
+    line-height: 17px;
+  }
 }
 
 .new {
@@ -282,25 +325,20 @@ h3 {
 .new .new_collection {
   max-width: 880px;
   width: 100%;
+  position: relative;
 }
 .new .new_collection .content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   position: absolute;
-  bottom: -480px;
-  right: 250px;
-  height: 146px;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+  bottom: 230px;
+}
+.new .new_collection .content::before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
 .new .new_collection .content button {
   width: 138px;
@@ -315,9 +353,15 @@ h3 {
   color: #FFFFFF;
 }
 .new .new_collection .content span {
+  display: block;
+  margin: 20px auto;
   width: 120px;
   height: 2px;
   background-color: #FFFFFF;
+}
+.new .new_collection img {
+  width: 100%;
+  height: auto;
 }
 
 .old_collection {
@@ -366,11 +410,21 @@ h3 {
   line-height: 150%;
   color: #FFFFFF;
 }
+@media (max-width: 445px) {
+  .old_collection .content p {
+    font-size: 13px;
+    line-height: 100%;
+  }
+}
 .old_collection .content span {
   margin: 40px 0 40px 0;
   width: 120px;
   height: 2px;
   background-color: #FFFFFF;
+}
+.old_collection img {
+  width: 100%;
+  height: auto;
 }
 
 .new_arrival {
@@ -405,9 +459,8 @@ h3 {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -ms-flex-line-pack: justify;
       align-content: space-between;
 }
@@ -443,6 +496,9 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .brends .content img {
   margin: 0 15px 0 15px;
@@ -452,7 +508,7 @@ footer {
   background-image: url(/img/footer.png);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   height: 400px;
 }
 footer .information {
@@ -491,6 +547,12 @@ footer .information .content .about_us p {
   line-height: 150%;
   color: #FFFFFF;
 }
+@media (max-width: 445px) {
+  footer .information .content .about_us p {
+    font-size: 13px;
+    line-height: 100%;
+  }
+}
 footer .information .content .catygory {
   max-width: 350px;
   width: 100%;
@@ -507,9 +569,19 @@ footer .information .content .catygory button {
   padding: 10px 20px;
   color: #FFFFFF;
 }
+@media (max-width: 445px) {
+  footer .information .content .catygory {
+    text-align: center;
+  }
+}
 footer .information .content .mailing {
   max-width: 350px;
   width: 100%;
+}
+@media (max-width: 445px) {
+  footer .information .content .mailing {
+    display: none;
+  }
 }
 footer .information .content .mailing p {
   margin: 40px 0 40px;
@@ -519,6 +591,12 @@ footer .information .content .mailing p {
   font-size: 14px;
   line-height: 150%;
   color: #FFFFFF;
+}
+@media (max-width: 445px) {
+  footer .information .content .mailing p {
+    font-size: 13px;
+    line-height: 100%;
+  }
 }
 footer .information .content .mailing button {
   background-color: #0F0F0F;
@@ -530,6 +608,7 @@ footer .information .content .mailing button {
   line-height: 23px;
   padding: 10px 20px;
   color: #FFFFFF;
+  text-align: center;
 }
 footer .information .content .mailing input {
   background-color: rgba(255, 255, 255, 0.4);
@@ -549,4 +628,10 @@ footer .information .content .mailing input {
   text-align: left;
   padding: 17px 0 17px 0;
   margin: 0 auto;
+}
+@media (max-width: 445px) {
+  .autors {
+    font-size: 13px;
+    line-height: 100%;
+  }
 }
