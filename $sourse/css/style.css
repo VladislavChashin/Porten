@@ -3,6 +3,7 @@
 @import url(/fonts/post-nobiils/style.css);
 @import url(/fonts/pt-sans/style.css);
 @import url(media.css);
+@import url(anim.css);
 body {
   background-color: rgb(0, 0, 0);
 }
@@ -162,15 +163,28 @@ h3 {
     display: none;
   }
 }
-.header_content .navbar .navbar_content nav a {
+.header_content .navbar .navbar_content nav ul li {
+  height: 100%;
+}
+.header_content .navbar .navbar_content nav ul li a {
   font-family: "PT Sans Regular";
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 500%;
   color: #969696;
   text-decoration: none;
   outline: none;
+  display: block;
+  height: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.header_content .navbar .navbar_content nav ul li:nth-child(-n+3) a:hover {
+  background-color: #1f1f1f;
+  color: #fff;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
 }
 
 .first_screen {
@@ -178,7 +192,7 @@ h3 {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 810px;
+  height: 900px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -247,6 +261,11 @@ h3 {
   margin: 50px 5px 0px 5px;
   max-width: 260px;
   width: 100%;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.product:hover {
+  margin: 0 5px;
 }
 .product img {
   background-color: #191B1C;
@@ -351,6 +370,12 @@ h3 {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.new .new_collection .content button:hover {
+  background-color: rgba(255, 255, 255, 0.743);
+  color: rgb(51, 51, 51);
 }
 .new .new_collection .content span {
   display: block;
@@ -398,6 +423,12 @@ h3 {
   font-size: 18px;
   line-height: 23px;
   color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+.old_collection .content button:hover {
+  background-color: rgba(255, 255, 255, 0.743);
+  color: rgb(51, 51, 51);
 }
 .old_collection .content p {
   max-width: 471px;
@@ -568,6 +599,15 @@ footer .information .content .catygory button {
   line-height: 23px;
   padding: 10px 20px;
   color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+footer .information .content .catygory button:hover {
+  background-color: rgb(208, 208, 208);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(208, 208, 208);
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
 }
 @media (max-width: 445px) {
   footer .information .content .catygory {
@@ -608,7 +648,16 @@ footer .information .content .mailing button {
   line-height: 23px;
   padding: 10px 20px;
   color: #FFFFFF;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
   text-align: center;
+}
+footer .information .content .mailing button:hover {
+  background-color: rgb(208, 208, 208);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(208, 208, 208);
+  -webkit-transition: background-color 0.7s;
+  transition: background-color 0.7s;
 }
 footer .information .content .mailing input {
   background-color: rgba(255, 255, 255, 0.4);
