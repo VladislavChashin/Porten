@@ -1,7 +1,7 @@
 @import url("reset.css");
-@import url(/fonts/playfair/style.css);
-@import url(/fonts/post-nobiils/style.css);
-@import url(/fonts/pt-sans/style.css);
+@import url(../fonts/playfair/style.css);
+@import url(../fonts/post-nobiils/style.css);
+@import url(../fonts/pt-sans/style.css);
 @import url(media.css);
 @import url(anim.css);
 body {
@@ -188,7 +188,7 @@ h3 {
 }
 
 .first_screen {
-  background-image: url(/img/firs_peaple.png);
+  background-image: url(../img/firs_peaple.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -536,7 +536,7 @@ h3 {
 }
 
 footer {
-  background-image: url(/img/footer.png);
+  background-image: url(../img/footer.png);
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
